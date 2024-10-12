@@ -8,7 +8,7 @@
 // In backtracking algorithms (like the DFS in your example), once a base case is met or all possibilities from a certain point have been explored, the function will return control to the previous function call in the stack.
 // This return doesn't mean that the function stops executing entirely; it simply means that it finishes that specific instance of the function call and goes back to where it left off in the previous call (continuing from the next line after the recursive call).
 
-
+//O(v^V)
 class Graph{
     constructor(v){
         this.arrayList = new Array(v).fill(null).map(()=>[])
