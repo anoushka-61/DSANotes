@@ -1,3 +1,42 @@
+
+// What is an Articulation Point?
+// An articulation point (or cut vertex) in a graph is a vertex that, when removed (along with its edges), increases the number of connected components in the graph. In simpler terms, removing an articulation point disconnects the graph, meaning the remaining graph becomes split into two or more disconnected subgraphs.
+
+// Formal Definition: A vertex v in a connected graph is called an articulation point if removing v (and all edges connected to v) results in a graph that has more connected components than the original graph.
+// Articulation points are critical for network connectivity because they represent single points of failure—removing them can break the connectivity between parts of the graph.
+
+// When to Use Articulation Points?
+// You would typically look for articulation points in scenarios where network resilience or fault tolerance is critical. Identifying articulation points helps in determining vulnerabilities or critical connections in a system.
+
+// Here are common cases where articulation points are used:
+
+// Network Design:
+
+// Objective: You need to ensure the reliability and robustness of communication networks, computer networks, or infrastructure systems.
+// Use Case: Finding articulation points helps in identifying weak points in the network, where the failure of a single node can cause disconnection. This can assist in reinforcing those weak points or rerouting connections.
+// Road/Transportation Systems:
+
+// Objective: Ensure that traffic flow or transportation routes are not disrupted by the failure of a single road or station.
+// Use Case: In a transportation network (cities connected by roads), an articulation point represents a city whose closure would split the network, disrupting travel between regions. Identifying such cities can help with infrastructure planning.
+// Internet and Computer Networks:
+
+// Objective: Maintain continuous access across servers or routers in a computer network.
+// Use Case: In computer networks, routers or servers can act as articulation points. If an articulation point fails, certain parts of the network become inaccessible. Understanding which routers or servers are critical for maintaining network connectivity can help ensure high availability and plan redundancy.
+// Social Network Analysis:
+
+// Objective: Analyze the strength and connectivity of social relationships.
+// Use Case: In a social network, articulation points are individuals whose removal would split the network into separate groups. Identifying such people can provide insights into the network’s structure and help target important individuals for maintaining connectivity within the community.
+// Biological Networks:
+
+// Objective: Ensure robustness in biological systems like food webs or metabolic pathways.
+// Use Case: In biological networks (e.g., ecosystems, food chains), certain species act as articulation points. If they are removed, the ecosystem could collapse into disconnected subsystems. Identifying these species helps understand vulnerabilities in ecosystems.
+// Graph-Based Applications:
+
+// Objective: Ensure structural integrity and fault tolerance.
+// Use Case: Articulation points are useful in graph-based applications like circuit design, database integrity checks, and software dependency management to avoid single points of failure.
+
+
+
 class Graph {
     constructor(vertexCount) {
         this.vertexCount = vertexCount;
