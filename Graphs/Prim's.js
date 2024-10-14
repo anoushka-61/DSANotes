@@ -1,3 +1,11 @@
+//Goal: The main use case for Prim’s algorithm is when you need to find a Minimum Spanning Tree (MST) of a connected, undirected, weighted graph.
+// MST Problem: You are asked to connect all the vertices of a graph with the minimum total edge weight, without forming any cycles.
+// Example:
+// Designing a network (e.g., laying out cables, roads, or pipelines) where you want to connect multiple locations at the minimum cost.
+// Power grid design, where the objective is to connect power stations with minimum wiring costs.
+// If your problem revolves around building a network of connections with the least cost, Prim's algorithm is a good choice.
+
+
 class Graph {
     constructor(vertexCount) {
         this.vertexCount = vertexCount;
