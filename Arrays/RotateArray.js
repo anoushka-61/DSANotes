@@ -1,10 +1,11 @@
 
 //left rotate
-const RotateArray = (array,k)=>{
-return array.slice(k).concat(array.slice(0,k))
-}
+var rotate = function(nums, k) {
+    
+    return nums.slice(k).concat(nums.slice(0,k))
+};
 
-console.log(RotateArray([1, 2, 3, 4, 5, 6],2))
+console.log(rotate([1, 2, 3, 4, 5, 6,7],4))
 
 //Right rotate
 

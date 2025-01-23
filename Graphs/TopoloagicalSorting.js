@@ -47,8 +47,8 @@ class Graph {
     }
 }
 const graph = new Graph(0);
-graph.addEdge();
-
+graph.addEdge(1,0);
+graph.addEdge(1,2);
 
 
 graph.displayGraph()

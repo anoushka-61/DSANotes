@@ -34,6 +34,7 @@ class Graph {
 
         for(let i=0 ; i<this.vertices; i++){
             for(const neighbour of this.adjacencyList[i]){
+                 
                 transposeGraph.addEdge(neighbour,i)
             }
         }
